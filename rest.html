@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar nuevo auto</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="bienvenido.html">Inicio</a></li>
+				<li><a href="rest.html">Registrar</a></li>
+				<li><a href="retirar.html">Retirar</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+			<button class="nav-button">&#9776;</button>
+		</nav>
+	</header>
+	<div class="container">
+		<h1 class="titulo-parpadeante">Registrar nuevo auto</h1><br>
+		<form method="POST" action="registrar_auto.php">
+			<div class="form-group">
+			  <label for="placa">Placa:</label>
+			  <input type="text" id="placa" name="placa" required>
+			</div>
+			<div class="form-group">
+			  <label for="marca">Marca:</label>
+			  <input type="text" id="marca" name="marca" required>
+			</div>
+			<div class="form-group">
+			  <label for="modelo">Modelo:</label>
+			  <input type="text" id="modelo" name="modelo" required>
+			</div>
+			<input type="submit" value="Registrar" class="btn-luminoso">
+		  </form>		  
+	</div>
+	<div style="border: 2px solid rgb(255, 0, 0); padding: 10px;">
+		<p>El auto con placa <?php echo $placa; ?> ha sido registrado en el estacionamiento.</p>
+	  </div>
+	  
+</body>
+</html>

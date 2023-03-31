@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta de autos</title>
+<link rel="stylesheet" href="css/e.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="bienvenido.html">Inicio</a></li>
+                <li><a href="rest.html">Registrar</a></li>
+                <li><a href="retirar.html">Retirar</a></li>
+                <li><a href="consultar.html">Consulta</a></li>
+            </ul>
+            <button class="nav-button">&#9776;</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="color: white;">Consulta de autos</h1>
+
+        <form action="consultar_autos.php" method="POST">
+            <label for="marca" style="color: white;">Marca:</label>
+            <input type="text" name="marca" id="marca">
+
+            <br><br>
+
+            <label for="placa" style="color: white;">Placa:</label>
+            <input type="text" name="placa" id="placa">
+
+            <br><br>
+
+            <input type="submit" value="Consultar" style="margin: auto;">
+        </form>
+    </div>
+</body>
+</html>

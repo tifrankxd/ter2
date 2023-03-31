@@ -1,0 +1,143 @@
+body {
+    background-color: #000;
+    animation: fondo-parpadeo 0.5s linear infinite;
+  }
+  
+  @keyframes fondo-parpadeo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 2.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid rgb(255, 0, 0);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	color: white;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-button {
+	display: none;
+	background-color: #fff;
+	color: #333;
+	border: none;
+	font-size: 20px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	nav ul {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 10px;
+	}
+	
+	nav ul li {
+		margin: 0;
+	}
+	
+	.nav-button {
+		display: block;
+	}
+}
+.form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  label {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(1, 48, 30, 0.2);
+  }
+  .btn-luminoso {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px #02e08b;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-luminoso:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px #fff;
+  }
+  .titulo-parpadeante {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    animation: parpadeo 1s linear infinite;
+    color: #00ff00;
+  }
+  
+  @keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

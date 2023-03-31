@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Retirar auto</title>
+  <link rel="stylesheet" type="text/css" href="css/tyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="bienvenido.html">Inicio</a></li>
+                <li><a href="rest.html">Registrar</a></li>
+                <li><a href="retirar.html">Retirar</a></li>
+                <li><a href="consultar.html">Consulta</a></li>
+            </ul>
+            <button class="nav-button">&#9776;</button>
+        </nav>
+    </header>
+  <div class="container">
+    <h1>Retirar auto del estacionamiento</h1>
+    <form action="retirar_auto.php" method="POST">
+        <div class="input-group">
+            <label for="placa">Placa del auto:</label>
+            <input type="text" id="placa" name="placa" required>
+          </div>          
+      <br><br>
+      <button type="submit" class="luminoso">Retirar auto</button>
+    </form>
+  </div>
+</body>
+</html>
